@@ -1162,7 +1162,11 @@
         // Show selected tab
         const activeTab = document.getElementById(tabName);
         if (activeTab) {
-            activeTab.style.display = 'block';
+            if (activeTab.id === 'hero') {
+                activeTab.style.display = 'flex';
+            } else {
+                activeTab.style.display = 'block';
+            }
         }
     }
 
