@@ -617,6 +617,84 @@
                 margin-right: 20px;
             }
         }
+
+                /* Skills Section */
+        .skills-section {
+            padding: 80px 0;
+            background: var(--color-background);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .skill-category {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .skill-category-title {
+            color: var(--color-text);
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 25px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        .skill-items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .skill-icon {
+            font-size: 32px;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .skill-name {
+            flex: 1;
+            font-weight: 500;
+            color: var(--color-text);
+            font-size: 14px;
+        }
+
+        .skill-level {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -624,21 +702,23 @@
     <nav>
         <div class="logo">Portfolio</div>
         <div>
-            <a href="#hero">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#video">Video</a>
-            <a href="#certifications">Certifications</a>
+            <a href="#" onclick="showTab('hero'); return false;">Home</a>
+            <a href="#" onclick="showTab('projects'); return false;">Projects</a>
+            <a href="#" onclick="showTab('video'); return false;">Video</a>
+            <a href="#" onclick="showTab('skills'); return false;">Skills</a>
+            <a href="#" onclick="showTab('certifications'); return false;">Certifications</a>
         </div>
+
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" style="display: flex;">
         <div class="hero-left">
             <h1>Ng Soon Teck</h1>
             <p>I'm a <strong>UI/UX Designer</strong> specializing in <strong>accessibility</strong>, <strong>user-centered design</strong>, and <strong>human-computer interaction</strong>. Based in Kuala Lumpur, I create intuitive, inclusive digital experiences that solve real problems and meet WCAG 2.2 accessibility standards.</p>
             <p>With a focus on <strong>iterative design processes</strong>, I combine user research, usability testing, and accessibility principles to deliver solutions that are not only beautiful but genuinely useful. I'm experienced in designing for diverse contexts—from immersive career exploration platforms to safety-critical automotive interfaces—always keeping the end-user at the center of every decision.</p>
             <p><strong>Currently exploring:</strong> AI applications in UX design, design systems, and cross-platform digital experiences.</p>
-            <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+            <button class="btn" onclick="showTab('projects')">View My Work</button>
         </div>
         <div class="hero-right">
             <div class="profile-image">
@@ -647,7 +727,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects-section" id="projects">
+    <section class="projects-section" id="projects" style="display: none;">
         <div class="container">
             <div class="section-tag">Featured Works</div>
             <h2 class="section-title">My Projects</h2>
@@ -825,7 +905,7 @@
     </section>
 
     <!-- Video Section -->
-    <section class="video-section" id="video">
+    <section class="video-section" id="video" style="display: none;">
         <div class="container">
             <div class="section-tag">Process & Insights</div>
             <h2 class="section-title">Project Walkthrough</h2>
@@ -843,8 +923,128 @@
         </div>
     </section>
 
+
+        <!-- Skills Section -->
+    <section class="skills-section" id="skills" style="display: none;">
+        <div class="container">
+            <div class="section-tag">Expertise</div>
+            <h2 class="section-title">Skills & Tools</h2>
+            <p class="section-subtitle">UI/UX tools and methods I'm proficient in</p>
+
+            <div class="skills-grid">
+                <!-- Design Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Design Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <div class="skill-name">Figma</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🖼️</div>
+                            <div class="skill-name">Canva</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎭</div>
+                            <div class="skill-name">Adobe XD</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">✏️</div>
+                            <div class="skill-name">Sketch</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research & Testing -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Research & Testing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">🔍</div>
+                            <div class="skill-name">Usability Testing</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <div class="skill-name">User Research</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <div class="skill-name">A/B Testing</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📋</div>
+                            <div class="skill-name">Heuristic Evaluation</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessibility & Standards -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Accessibility & Standards</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">♿</div>
+                            <div class="skill-name">WCAG 2.2</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📐</div>
+                            <div class="skill-name">Accessibility Auditing</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <div class="skill-name">Design Systems</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">👥</div>
+                            <div class="skill-name">Stakeholder Communication</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🤝</div>
+                            <div class="skill-name">Team Collaboration</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💡</div>
+                            <div class="skill-name">Problem Solving</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📝</div>
+                            <div class="skill-name">Documentation</div>
+                            <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Certifications Section -->
-    <section class="certifications-section" id="certifications">
+    <section class="certifications-section" id="certifications" style="display: none;">
         <div class="container">
             <div class="section-tag">Credentials</div>
             <h2 class="section-title">Certifications</h2>
@@ -939,6 +1139,30 @@
         if (modal) {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
+        }
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+
+        // Tab switching function
+    function showTab(tabName) {
+        // Hide all sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        
+        // Show selected tab
+        const activeTab = document.getElementById(tabName);
+        if (activeTab) {
+            activeTab.style.display = 'block';
         }
     }
 
