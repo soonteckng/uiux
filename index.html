@@ -618,83 +618,84 @@
             }
         }
 
-                /* Skills Section */
-        .skills-section {
-            padding: 80px 0;
-            background: var(--color-background);
-        }
+            /* Skills Section - Card-based Design */
+    .skills-section {
+        padding: 80px 0;
+        background: var(--color-background);
+    }
 
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .skill-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skill-card:hover {
+        box-shadow: 0 8px 20px rgba(50, 184, 198, 0.15);
+        transform: translateY(-4px);
+        border-color: var(--color-primary);
+    }
+
+    .skill-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .skill-icon {
+        font-size: 40px;
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .skill-info {
+        flex: 1;
+    }
+
+    .skill-name {
+        margin: 0;
+        color: var(--color-text);
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .skill-level {
+        display: inline-block;
+        background: var(--color-primary);
+        color: var(--color-btn-primary-text);
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .skill-description {
+        color: var(--color-text-secondary);
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
         .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
+            grid-template-columns: 1fr;
+            gap: 25px;
         }
-
-        .skill-category {
-            background: var(--color-surface);
-            border: 1px solid var(--color-border);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .skill-category:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            transform: translateY(-4px);
-        }
-
-        .skill-category-title {
-            color: var(--color-text);
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0 0 25px 0;
-            padding-bottom: 15px;
-            border-bottom: 2px solid var(--color-primary);
-        }
-
-        .skill-items {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .skill-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .skill-icon {
-            font-size: 32px;
-            min-width: 40px;
-            text-align: center;
-        }
-
-        .skill-name {
-            flex: 1;
-            font-weight: 500;
-            color: var(--color-text);
-            font-size: 14px;
-        }
-
-        .skill-level {
-            background: var(--color-primary);
-            color: var(--color-btn-primary-text);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-        }
+    }
     </style>
 </head>
 <body>
@@ -924,7 +925,7 @@
     </section>
 
 
-        <!-- Skills Section -->
+            <!-- Skills Section -->
     <section class="skills-section" id="skills" style="display: none;">
         <div class="container">
             <div class="section-tag">Expertise</div>
@@ -932,116 +933,105 @@
             <p class="section-subtitle">UI/UX tools and methods I'm proficient in</p>
 
             <div class="skills-grid">
-                <!-- Design Tools -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Design Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">🎨</div>
-                            <div class="skill-name">Figma</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🖼️</div>
-                            <div class="skill-name">Canva</div>
-                            <div class="skill-level">Proficient</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎭</div>
-                            <div class="skill-name">Adobe XD</div>
-                            <div class="skill-level">Proficient</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">✏️</div>
-                            <div class="skill-name">Sketch</div>
-                            <div class="skill-level">Intermediate</div>
+                <!-- Figma -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Figma</h3>
+                            <span class="skill-level">Expert</span>
                         </div>
                     </div>
+                    <p class="skill-description">High-fidelity wireframing, interactive prototypes, design systems, and collaborative design. Used extensively for both SkillScape and Driven Well projects to create detailed user interfaces and test interactions with stakeholders.</p>
                 </div>
 
-                <!-- Research & Testing -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Research & Testing</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">🔍</div>
-                            <div class="skill-name">Usability Testing</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📊</div>
-                            <div class="skill-name">User Research</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎯</div>
-                            <div class="skill-name">A/B Testing</div>
-                            <div class="skill-level">Proficient</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📋</div>
-                            <div class="skill-name">Heuristic Evaluation</div>
-                            <div class="skill-level">Proficient</div>
+                <!-- Canva -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">🖼️</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Canva</h3>
+                            <span class="skill-level">Proficient</span>
                         </div>
                     </div>
+                    <p class="skill-description">Quick visual creation for presentations, social media graphics, and infographics. Excellent for rapidly communicating design concepts and creating accessible, presentation-ready visuals for stakeholder meetings.</p>
                 </div>
 
-                <!-- Accessibility & Standards -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Accessibility & Standards</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">♿</div>
-                            <div class="skill-name">WCAG 2.2</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📐</div>
-                            <div class="skill-name">Accessibility Auditing</div>
-                            <div class="skill-level">Proficient</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🎨</div>
-                            <div class="skill-name">Design Systems</div>
-                            <div class="skill-level">Proficient</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📱</div>
-                            <div class="skill-name">Responsive Design</div>
-                            <div class="skill-level">Expert</div>
+                <!-- PowerPoint -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">PowerPoint</h3>
+                            <span class="skill-level">Proficient</span>
                         </div>
                     </div>
+                    <p class="skill-description">Presentation design and storytelling. Used to communicate design research findings, user journey maps, and project outcomes in a clear, engaging way to both technical and non-technical audiences.</p>
                 </div>
 
-                <!-- Soft Skills -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Soft Skills</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-icon">👥</div>
-                            <div class="skill-name">Stakeholder Communication</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">🤝</div>
-                            <div class="skill-name">Team Collaboration</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">💡</div>
-                            <div class="skill-name">Problem Solving</div>
-                            <div class="skill-level">Expert</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">📝</div>
-                            <div class="skill-name">Documentation</div>
-                            <div class="skill-level">Proficient</div>
+                <!-- User Research -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">🔍</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">User Research</h3>
+                            <span class="skill-level">Expert</span>
                         </div>
                     </div>
+                    <p class="skill-description">Qualitative and quantitative research methods including user interviews, surveys, contextual inquiry, and task analysis. Conducted research with 18+ participants across SkillScape and Driven Well to validate design directions and identify user pain points.</p>
+                </div>
+
+                <!-- Usability Testing -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">✅</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Usability Testing</h3>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Moderated and unmoderated testing, usability metrics (SUS, task success rates), heuristic evaluation, and A/B testing. Iteratively tested prototypes to ensure designs are intuitive and meet accessibility standards.</p>
+                </div>
+
+                <!-- WCAG & Accessibility -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">♿</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">WCAG 2.2 Accessibility</h3>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Accessibility auditing, inclusive design principles, color contrast compliance, keyboard navigation, and assistive technology considerations. All projects follow WCAG 2.2 guidelines to ensure usability for diverse users.</p>
+                </div>
+
+                <!-- Wireframing & Information Architecture -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">📐</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Wireframing & IA</h3>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Low-fidelity wireframes, user flow diagrams, information architecture mapping, and sitemaps. Creates clear structural foundations for projects before moving to visual design, ensuring logical navigation and user goals are met.</p>
+                </div>
+
+                <!-- Design Thinking & Problem-Solving -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">💡</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Design Thinking</h3>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Human-centered design methodology, empathizing with users, defining problems, ideation, prototyping, and iterative testing. Applies structured problem-solving to translate user insights into actionable design solutions.</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Certifications Section -->
     <section class="certifications-section" id="certifications" style="display: none;">
