@@ -183,6 +183,17 @@
             animation: shine 3s infinite;
         }
 
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+
         @keyframes shine {
             0% { left: -100%; }
             100% { left: 100%; }
@@ -417,6 +428,9 @@
             overflow: hidden;
             box-shadow: 0 25px 60px rgba(50, 184, 198, 0.15);
             border: 1px solid rgba(50, 184, 198, 0.2);
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
         }
 
         .video-placeholder {
@@ -627,7 +641,8 @@
             <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
         </div>
         <div class="hero-right">
-            <div class="profile-image">Replace with your profile photo</div>
+            <div class="profile-image">
+                <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/profile.jpg" alt="Ng Soon Teck">
         </div>
     </section>
 
@@ -817,7 +832,13 @@
             <p class="section-subtitle">Watch my design process in action</p>
 
             <div class="video-container">
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/b9YZ4JzZ6Gg" title="UX Portfolio Project Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;" 
+                    src="https://www.youtube.com/embed/b9YZ4JzZ" 
+                    title="UX Portfolio Project Walkthrough" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
