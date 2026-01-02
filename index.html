@@ -758,62 +758,279 @@
                     </div>
                 </div>
 
-                <!-- SkillScape Modal -->
+                    <!-- SkillScape Modal - Fully Verified from UX Report -->
                 <div id="skillscape-modal" class="modal">
                     <div class="modal-content">
                         <span class="close-modal" onclick="closeModal('skillscape-modal')">&times;</span>
-                        <h2 style="color: #32b8c6; margin-bottom: 20px;">SkillScape: Immersive Career Exploration Platform</h2>
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Project Overview</h3>
-                        <p style="color: #b0b0b0; line-height: 1.8;">SkillScape addresses a critical gap in career exploration for university students aged 18-23. Traditional career discovery methods (job descriptions, career fairs, generic advice) fail to provide immersive, real-world understanding of professions. This hybrid web-AR platform combines browsing with Augmented Reality simulations, offering dynamic and engaging career experiences.</p>
-
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Sketched Paper Prototype</h3>
-                        <div class="modal-gallery">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture3.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture4.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture5.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture7.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture8.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture9.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture10.png" alt="SkillScape Interface 1" class="modal-image">
+                        <h2 style="color: #32b8c6; margin-bottom: 10px;">SkillScape</h2>
+                        <p style="color: #a0a0a0; font-size: 14px; margin-bottom: 30px;">Immersive Career Exploration Platform with AR Simulations</p>
+                        
+                        <!-- System Overview Diagram -->
+                        <div style="background: rgba(50, 184, 198, 0.08); padding: 25px; border-radius: 10px; margin-bottom: 30px;">
+                            <p style="color: #32b8c6; font-weight: 600; margin: 0 0 15px 0; font-size: 14px;">⚙️ Platform Architecture</p>
+                            <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 15px;">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">🌐</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Web<br>(Desktop)</p>
+                                </div>
+                                <div style="color: #32b8c6; font-weight: bold;">+</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">📱</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">AR<br>(Mobile)</p>
+                                </div>
+                                <div style="color: #32b8c6; font-weight: bold;">→</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">💬</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Cross-Device<br>Sync</p>
+                                </div>
+                                <div style="color: #32b8c6; font-weight: bold;">→</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">🎯</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Personalized<br>Insights</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Design Process</h3>
-                        <p style="color: #b0b0b0;"><strong>Research Phase:</strong> Conducted user research with 18 survey respondents and qualitative testing to understand career exploration habits and expectations. Students prioritized job stability (77.8%), work-life balance (77.8%), and growth opportunities (77.8%).</p>
-                        <p style="color: #b0b0b0;"><strong>Ideation:</strong> Created personas, scenarios, and cross-channel journey maps. Developed information architecture with two main task flows: completing career AR simulations and taking skill assessments.</p>
-                        <p style="color: #b0b0b0;"><strong>Prototyping:</strong> Built high-fidelity prototype in Figma with focus on simplicity, cross-device consistency, and emotional engagement through gamification.</p>
-                        <p style="color: #b0b0b0;"><strong>Testing & Iteration:</strong> Usability tested with 2 final-year university students. Refined information architecture based on cognitive load principles and cross-channel logic.</p>
+                        <!-- Problem & Solution -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 15px;">The Problem</h3>
+                        <p style="color: #b0b0b0; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+                            University students aged 18-23 struggle with career exploration through traditional methods like job descriptions, career fairs, and generic advice. These approaches fail to provide immersive, real-world understanding of professions, leading to confusion, indecision, and suboptimal career choices. Current tools are often static with limited interactivity or personalized feedback, leaving students with incomplete or outdated information about actual day-to-day work responsibilities.
+                        </p>
+                        
+                        <div style="background: rgba(50, 184, 198, 0.1); border-left: 4px solid #32b8c6; padding: 20px; margin-bottom: 30px; border-radius: 4px;">
+                            <p style="color: #32b8c6; font-weight: 600; margin: 0;">💡 Proposed Solution</p>
+                            <p style="color: #b0b0b0; margin: 10px 0 0 0; text-align: justify;">
+                                A hybrid web-AR platform combining web browsing with Augmented Reality (AR) simulations. Students experience realistic job scenarios, complete gamified skill assessments with personalized feedback, and receive AI-driven career recommendations. The platform bridges the gap between theoretical job descriptions and actual workplace experiences, boosting decision-making confidence.
+                            </p>
+                        </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Prototype Interface</h3>
+                        <!-- Paper Prototypes -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Paper Prototype Sketches</h3>
+                        <div class="modal-gallery">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture3.png" alt="SkillScape Sketch 1" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture4.png" alt="SkillScape Sketch 2" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture5.png" alt="SkillScape Sketch 3" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture7.png" alt="SkillScape Sketch 4" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture8.png" alt="SkillScape Sketch 5" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture9.png" alt="SkillScape Sketch 6" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture10.png" alt="SkillScape Sketch 7" class="modal-image">
+                        </div>
+
+                        <!-- Design Process Timeline -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Design Process Timeline</h3>
+                        <div style="position: relative; padding: 20px 0; margin-bottom: 30px;">
+                            <div style="position: absolute; left: 30px; top: 0; width: 2px; height: 100%; background: linear-gradient(to bottom, #32b8c6, rgba(50, 184, 198, 0.2));"></div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">1</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">User Research & Analysis</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px; text-align: justify;">Mixed methods approach: <strong>18 survey respondents</strong> and 1 pilot tester. Identified career decision factors, AR familiarity levels, and platform preferences through Google Forms and qualitative interviews</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">2</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Personas, Scenarios & Architecture</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px; text-align: justify;">Created Marcus Chen persona (third-year CS student), two main task flows (AR career simulations & skill assessments), information architecture, and cross-channel journey maps</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">3</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Wireframing & Feedback</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px; text-align: justify;"><strong>8 wireframe screens</strong> across desktop and mobile. Incorporated peer and instructor feedback on navigation clarity, cognitive load, cross-channel transitions, and accessibility concerns</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">4</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">High-Fidelity Prototype & Usability Testing</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px; text-align: justify;">Built Figma prototype with purple/magenta gradient palette. Conducted usability testing with <strong>2 final-year university students</strong>. Tested 9 key tasks and gathered satisfaction ratings</p>
+                            </div>
+                            
+                            <div style="padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">5</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Iteration & Refinement</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px; text-align: justify;">Refined navigation (breadcrumb navigation added), optimized cognitive load (moved completed assessments to profile), improved cross-channel clarity with save states and sync markers</p>
+                            </div>
+                        </div>
+
+                        <!-- High-Fidelity Prototype -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">High-Fidelity Prototypes</h3>
                         <div class="modal-gallery">
                             <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/2631b207-2dce-49ff-a692-251019ee53fd.png" alt="SkillScape Interface 1" class="modal-image">
                             <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/d9144477-af27-4e1c-af7d-8dabc430f07e.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/28912fc3-1d2f-46ad-b02c-2e7be99d3d78.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/0f2909a3-76b4-451b-98ec-dd0703eb8238.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/4cc67782-d7c4-43eb-83c3-c204cbbe964e.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/09a59735-e567-46a4-9a08-018f89a19aba.png" alt="SkillScape Interface 2" class="modal-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/28912fc3-1d2f-46ad-b02c-2e7be99d3d78.png" alt="SkillScape Interface 3" class="modal-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/0f2909a3-76b4-451b-98ec-dd0703eb8238.png" alt="SkillScape Interface 4" class="modal-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/4cc67782-d7c4-43eb-83c3-c204cbbe964e.png" alt="SkillScape Interface 5" class="modal-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/09a59735-e567-46a4-9a08-018f89a19aba.png" alt="SkillScape Interface 6" class="modal-image">
                         </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Key Features</h3>
-                        <ul style="color: #b0b0b0; line-height: 1.8;">
-                            <li><strong>Day in the Life AR Simulations:</strong> Interactive job scenarios allowing students to experience realistic work tasks</li>
-                            <li><strong>Gamified Skill Assessments:</strong> Quizzes and challenges with progress tracking and badges</li>
-                            <li><strong>AI-Driven Recommendations:</strong> Personalized career suggestions based on assessment results and user preferences</li>
-                            <li><strong>Cross-Platform Sync:</strong> Seamless progress synchronization between desktop and mobile devices</li>
-                        </ul>
+                        <!-- Key Findings -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Key Research Findings</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💼 Career Priorities</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5;"><strong>77.8%</strong> prioritize job stability, work-life balance, and growth opportunities</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🎮 AR Experience</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5;"><strong>55.6%</strong> have never used AR; <strong>55.6%</strong> interested if "easy to use"</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🎯 Desired Features</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5;"><strong>77.8%</strong> want "Day in the Life" simulations; <strong>72.2%</strong> want skill assessments</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">📱 Device Preference</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5;"><strong>72.2%</strong> prefer laptop; <strong>66.7%</strong> prefer smartphone</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🔗 Platform Usage</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5;"><strong>88.9%</strong> have used platforms (LinkedIn 88.9%, JobStreet 61.1%)</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🎓 User Profile</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5;"><strong>100%</strong> current students (83.3% Bachelor's), aged <strong>18-23</strong></p>
+                            </div>
+                        </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Challenges & Solutions</h3>
-                        <p style="color: #b0b0b0;"><strong>Challenge 1 - AR Inexperience:</strong> 55.6% of users had never used AR. Solution: Implemented intuitive onboarding guides and progressive disclosure to support new-to-AR users without overwhelming complexity.</p>
-                        <p style="color: #b0b0b0;"><strong>Challenge 2 - Information Overload:</strong> Complex assessment layouts confused users. Solution: Restructured pages with chunked content, card-based layouts, and simplified navigation to reduce cognitive load.</p>
-                        <p style="color: #b0b0b0;"><strong>Challenge 3 - Cross-Channel Clarity:</strong> Transitions between devices lacked clarity. Solution: Added visual cues, clear save states, and synchronized progress indicators across platforms.</p>
+                        <!-- Key Features -->
+                        <h3 style="color: #e8e8e8; margin-bottom: 20px;">Core Features</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🎮 AR Career Simulations</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">"Day in the Life" immersive job scenarios where students experience realistic daily tasks and responsibilities through spatial AR interactions</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🏆 Gamified Assessments</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Skill challenges, quizzes, and progress tracking with points, badges, and achievement systems to enhance emotional engagement and motivation</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🤖 AI-Driven Recommendations</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Personalized career suggestions based on assessment results, skill strengths, and user interaction patterns for informed decision-making</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🔄 Seamless Cross-Device Sync</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Cloud-based synchronization of progress, saved careers, and assessment results across desktop web and mobile AR experiences</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">📊 Career Profile Dashboard</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Unified profile showing saved careers, completed assessments, assessment scores, and top matching career categories for easy reference</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">💬 Emotional & Cognitive Design</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Self-confidence-boosting feedback, visual career imagery for faster recognition, chunked information for reduced cognitive load</p>
+                            </div>
+                        </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Results & User Feedback</h3>
-                        <p style="color: #b0b0b0;">Usability testing revealed high satisfaction scores (4.5/5) with low perceived difficulty (1.5/5). Users appreciated the intuitive AR interface and personalized recommendations. The iterative design process resulted in a more accessible, engaging platform aligned with real student career exploration needs.</p>
-
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">My Role</h3>
-                        <p style="color: #b0b0b0;">As part of a 6-person team (UX 4-2), I contributed to the design process including prototype development and visual design implementation. Collaborated on information architecture refinement and usability testing coordination.</p>
+                        <!-- Design Challenges & Solutions -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Design Challenges & Solutions</h3>
                         
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ AR Inexperience (55.6% of users)</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Most students had never used AR before and felt uncertain about the technology despite interest.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Designed intuitive onboarding guides, progressive disclosure of AR features, and clear instructions for spatial interactions. Fallback: 3D video walkthrough alternative if AR not supported.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ Information Overload</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Wireframe feedback showed assessment pages and career details felt dense and cognitively overwhelming.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Implemented card-based layouts, chunked content into sections (About, Key Skills, Interactive Options), simplified pages using recognition over recall (career imagery replacing text), and moved completed assessments to profile for focused navigation.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ Cross-Channel Navigation Clarity</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Transitioning between desktop research and mobile AR simulations was not intuitive; users lost sense of progress when switching devices.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Added breadcrumb navigation, clear visual instructions for device handoffs (e.g., "Connect to your mobile"), synchronization markers showing "save states" across platforms, and progress indicators that update in real-time.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ Accessibility & Visual Design</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px; text-align: justify;">Initial wireframes lacked consideration for text sizes, color contrast, and navigation alternatives.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Increased font sizes on mobile, improved color contrast ratios, ensured accessible touch targets, and provided alternative navigation paths. Enhanced visual hierarchy through icons and clear call-to-action buttons.
+                            </p>
+                        </div>
+
+                        <!-- Usability Testing Results -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Usability Testing Results</h3>
+                        <div style="background: linear-gradient(135deg, rgba(50, 184, 198, 0.15), rgba(50, 184, 198, 0.05)); padding: 25px; border-radius: 10px; border: 1px solid rgba(50, 184, 198, 0.2); margin-bottom: 30px;">
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-bottom: 20px;">
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">2</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">Test<br>Participants</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">4/5</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">User 1<br>Satisfaction</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">4/5</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">User 2<br>Satisfaction</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">1/5</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">Perceived<br>Difficulty</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">9</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">Key Task<br>Scenarios</p>
+                                </div>
+                            </div>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 13px; line-height: 1.6; text-align: justify;">
+                                <strong>Testing Outcomes:</strong> Both final-year university students completed all 9 task scenarios successfully with minimal confusion. User 1 provided valuable feedback on button visibility (save job button too small) and assessment results clarity. User 2 requested tooltips for AR features, confirming importance of onboarding support for new interaction modes. Both users appreciated organized sections, efficient navigation, and the overall career exploration experience. Iterative refinements addressed small UI issues while maintaining design integrity.
+                            </p>
+                        </div>
+
+                        <!-- Persona -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Primary User Persona</h3>
+                        <div style="background: rgba(50, 184, 198, 0.08); padding: 20px; border-radius: 8px; border-left: 4px solid #32b8c6; margin-bottom: 30px;">
+                            <p style="color: #32b8c6; font-weight: 600; margin: 0 0 10px 0; font-size: 14px;">Marcus Chen</p>
+                            <p style="color: #b0b0b0; margin: 0 0 10px 0; font-size: 13px; line-height: 1.6; text-align: justify;">
+                                <strong>Age:</strong> 21 | <strong>Education:</strong> Third-year Computer Science student | <strong>Location:</strong> Petaling Jaya
+                            </p>
+                            <p style="color: #b0b0b0; margin: 0 0 10px 0; font-size: 13px; line-height: 1.6; text-align: justify;">
+                                Marcus has high tech literacy but limited AR/VR experience. He explores career information occasionally due to time constraints and relies heavily on friends and seniors rather than formal platforms like LinkedIn, which he finds too formal with unrealistic job descriptions.
+                            </p>
+                            <p style="color: #32b8c6; font-size: 13px; font-weight: 600; margin: 0 0 8px 0;">Primary Goals:</p>
+                            <p style="color: #b0b0b0; margin: 0 0 10px 0; font-size: 13px; line-height: 1.6;">Make informed career decisions by understanding day-to-day reality of tech jobs. Prioritizes job stability, work-life balance, and growth opportunities.</p>
+                            <p style="color: #32b8c6; font-size: 13px; font-weight: 600; margin: 0 0 8px 0;">Key Pain Points:</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 13px; line-height: 1.6;">Overwhelmed by information overload, uncertain about platform credibility, lacks time for extensive research. Marcus's quote: <em>"I want to know what tech jobs really feel like before I commit."</em></p>
+                        </div>
+
+                        <!-- Design Principles -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Design Principles & Visual Direction</h3>
+                        <div style="display: grid; gap: 15px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🎨 Color Palette & Emotional Design</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5; text-align: justify;">Modern purple and magenta gradient chosen to evoke optimism, creativity, and innovation—essential for future career planning. Bold yet approachable colors create an inviting atmosphere that encourages engagement and symbolize forward-thinking innovation.</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">📐 Information Architecture</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5; text-align: justify;">Card-based navigation, clear icons, and organized menus prioritize information, ensuring users aren't overwhelmed. Visual hierarchy emphasizes critical info through size and contrast.</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🎯 Behavioural Meaning</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5; text-align: justify;">"A Day in the Life" feature uses realistic simulations to help users visualize and emotionally connect with career tasks, allowing them to feel impact and relevance to personal goals.</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💰 Confidence-Building Feedback</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px; line-height: 1.5; text-align: justify;">Progress tracking, badges, and personalized recommendations reinforce user confidence and engagement. Profile displays career suitability recommendations, providing concrete evidence of progress and emotional reassurance.</p>
+                            </div>
+                        </div>
+
+                        <!-- My Role -->
+                        <h3 style="color: #e8e8e8; margin-bottom: 15px;">My Role</h3>
+                        <p style="color: #b0b0b0; margin: 0; line-height: 1.6; text-align: justify;">
+                            This project was completed as part of Group UX 4-2 for the PRG3014 UI/UX Design and Development course. Through this work, I contributed to key phases of the user-centered design process: participated in user research analysis and affinity mapping, helped develop the information architecture and task flows, contributed to wireframe design with cross-channel and usability annotations, assisted in prototyping refinements, and participated in usability testing coordination with target users. The project strengthened my understanding of translating research insights into intuitive interfaces, managing cross-platform complexity, and designing for emotional engagement in career exploration contexts.
+                        </p>
                     </div>
                 </div>
+
 
                 <!-- Project 2 -->
                 <div class="project-card">
@@ -838,69 +1055,293 @@
                     </div>
                 </div>
 
-                <!-- Driven Well Modal -->
+                    <!-- Driven Well Modal - Fully Verified from HCI Report -->
                 <div id="drivenwell-modal" class="modal">
                     <div class="modal-content">
                         <span class="close-modal" onclick="closeModal('drivenwell-modal')">&times;</span>
-                        <h2 style="color: #32b8c6; margin-bottom: 20px;">Driven Well: AI Driver Ergonomics & Fatigue Monitoring System</h2>
+                        <h2 style="color: #32b8c6; margin-bottom: 10px;">Driven Well</h2>
+                        <p style="color: #a0a0a0; font-size: 14px; margin-bottom: 30px;">AI Driver Ergonomics & Fatigue Monitoring System</p>
                         
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Problem Statement</h3>
-                        <p style="color: #b0b0b0; line-height: 1.8;">Drivers experience chronic discomfort and pain (back pain, neck stiffness, leg cramps) due to poor driving ergonomics and prolonged sitting, leading to reduced productivity, health issues, and increased accident risk. While modern vehicles have ergonomic features, drivers often fail to adjust them properly or maintain correct posture during long drives.</p>
+                        <!-- System Overview Diagram -->
+                        <div style="background: rgba(50, 184, 198, 0.08); padding: 25px; border-radius: 10px; margin-bottom: 30px;">
+                            <p style="color: #32b8c6; font-weight: 600; margin: 0 0 15px 0; font-size: 14px;">⚙️ How It Works</p>
+                            <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 15px;">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">📹</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Seat & Steering<br>Sensors</p>
+                                </div>
+                                <div style="color: #32b8c6; font-weight: bold;">+</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">🎥</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">In-Car Camera</p>
+                                </div>
+                                <div style="color: #32b8c6; font-weight: bold;">→</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">🤖</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">AI Analysis</p>
+                                </div>
+                                <div style="color: #32b8c6; font-weight: bold;">→</div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 32px; margin-bottom: 8px;">⚡</div>
+                                    <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Real-Time Feedback</p>
+                                </div>
+                            </div>
+                        </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Sketched Paper Prototype</h3>
+                        <!-- Problem & Solution -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 15px;">The Problem</h3>
+                        <p style="color: #b0b0b0; line-height: 1.8; margin-bottom: 20px;">
+                            Drivers frequently experience <strong>back pain, neck stiffness, leg cramps, and fatigue</strong> due to poor driving ergonomics and prolonged sitting. This gap between ergonomic vehicle design and actual driver behavior leads to accumulated discomfort over time, reduced driving safety, and long-term musculoskeletal health issues. Most drivers manage discomfort reactively, either through stretching, reclining seats, or cushions rather than proactively preventing it.
+                        </p>
+                        
+                        <div style="background: rgba(50, 184, 198, 0.1); border-left: 4px solid #32b8c6; padding: 20px; margin-bottom: 30px; border-radius: 4px;">
+                            <p style="color: #32b8c6; font-weight: 600; margin: 0;">💡 Proposed Solution</p>
+                            <p style="color: #b0b0b0; margin: 10px 0 0 0;">
+                                An in-vehicle AI ergonomics assistant that continuously monitors posture and fatigue through seat sensors, steering sensors, and in-car cameras, then provides <strong>adaptive real-time feedback via the instrument cluster and infotainment system</strong>. The system guides posture correction, detects emerging fatigue, and encourages scheduled breaks during long drives.
+                            </p>
+                        </div>
+
+                        <!-- Sketches -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Paper Prototype Sketches</h3>
                         <div class="modal-gallery">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture11.jpg" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture12.jpg" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture13.jpg" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture14.jpg" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture15.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture16.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture17.png" alt="SkillScape Interface 1" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture11.jpg" alt="Driven Well Sketch 1" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture12.jpg" alt="Driven Well Sketch 2" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture13.jpg" alt="Driven Well Sketch 3" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture14.jpg" alt="Driven Well Sketch 4" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture15.png" alt="Driven Well Sketch 5" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture16.png" alt="Driven Well Sketch 6" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture17.png" alt="Driven Well Sketch 7" class="modal-image">
                         </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Design Process</h3>
-                        <p style="color: #b0b0b0;"><strong>Research Phase:</strong> Conducted contextual inquiry and interviews with 4 participants (students, lecturers, delivery drivers) experiencing varying levels of driving-related discomfort. Identified gaps between ergonomic vehicle design and actual user behavior.</p>
-                        <p style="color: #b0b0b0;"><strong>Task Analysis:</strong> Mapped 6 key user tasks: manual posture adjustment, convenient automated adjustment, real-time posture feedback, personalized reporting, fatigue monitoring, and smart break recommendations.</p>
-                        <p style="color: #b0b0b0;"><strong>Design Ideation:</strong> Created 3 design sketches and selected the AI-Integrated Smart Dashboard Design focusing on real-time posture feedback and fatigue detection—the features with highest impact.</p>
-                        <p style="color: #b0b0b0;"><strong>Prototyping & Testing:</strong> Built paper and digital prototypes. Conducted heuristic evaluation and usability testing with domain experts and target users.</p>
+                        <!-- Design Timeline -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Design Process Timeline</h3>
+                        <div style="position: relative; padding: 20px 0; margin-bottom: 30px;">
+                            <div style="position: absolute; left: 30px; top: 0; width: 2px; height: 100%; background: linear-gradient(to bottom, #32b8c6, rgba(50, 184, 198, 0.2));"></div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">1</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Contextual Inquiry & Interviews</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px;">Observed and interviewed <strong>4 drivers</strong> (students, lecturers) about ergonomic challenges and fatigue patterns during real driving</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">2</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Task Analysis & Design Ideation</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px;">Mapped <strong>6 key user tasks</strong>: posture adjustment, real-time feedback, fatigue detection, break recommendations, personalized reports, and multi-driver profiles. Generated <strong>3 design concepts</strong></p>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">3</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Paper Prototyping & Heuristic Evaluation</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px;">Created sketches and paper mockups. Conducted <strong>in-class and outside-class heuristic evaluations</strong> with multiple evaluators</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 25px; padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">4</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Design Revisions & Testing</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px;">Implemented improvements: steering-wheel alert button, clearer system status indicators, fatigue-level visualisation. Conducted <strong>usability testing with 3 participants</strong></p>
+                            </div>
+                            
+                            <div style="padding-left: 80px; position: relative;">
+                                <div style="position: absolute; left: 15px; top: 3px; width: 30px; height: 30px; background: #32b8c6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">5</div>
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 4px 0;">Digital Mockups & Final Validation</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 13px;">Created high-fidelity digital prototypes incorporating all feedback. Finalized system ready for implementation</p>
+                            </div>
+                        </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Prototype Interface</h3>
+                        <!-- Digital Prototype -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">High-Fidelity Prototypes</h3>
                         <div class="modal-gallery">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture18.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture19.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture20.png" alt="SkillScape Interface 2" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture18.png" alt="Driven Well Interface 1" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture19.png" alt="Driven Well Interface 2" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture20.png" alt="Driven Well Interface 3" class="modal-image">
                         </div>
-                         <div class="modal-gallery">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture21.png" alt="SkillScape Interface 1" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture22.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture23.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture24.png" alt="SkillScape Interface 2" class="modal-image">
-                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture25.png" alt="SkillScape Interface 2" class="modal-image">
+                        <div class="modal-gallery">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture21.png" alt="Driven Well Interface 4" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture22.png" alt="Driven Well Interface 5" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture23.png" alt="Driven Well Interface 6" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture24.png" alt="Driven Well Interface 7" class="modal-image">
+                            <img src="https://raw.githubusercontent.com/soonteckng/uiux/refs/heads/main/UIUX/uiux%20pic/Picture25.png" alt="Driven Well Interface 8" class="modal-image">
                         </div>
 
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Key Features</h3>
-                        <ul style="color: #b0b0b0; line-height: 1.8;">
-                            <li><strong>Automatic Posture Detection:</strong> AI-powered camera and seat sensors continuously monitor driving posture</li>
-                            <li><strong>Real-Time Posture Feedback:</strong> Visual and audio alerts guide users to correct posture degradation before pain develops</li>
-                            <li><strong>Fatigue Detection:</strong> Multi-indicator system analyzing eye movement, facial features, and steering behavior</li>
-                            <li><strong>Smart Break Recommendations:</strong> Suggests optimal rest intervals based on trip duration and accumulated ergonomic strain</li>
-                            <li><strong>Intuitive Alert Dismissal:</strong> Steering wheel button for safe, distraction-free alert management</li>
-                        </ul>
-
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Design Challenges & Solutions</h3>
-                        <p style="color: #b0b0b0;"><strong>Challenge 1 - System Visibility:</strong> Users couldn't tell what the system was sensing. Solution: Added information prompts on instrument cluster explaining system activation, posture status, and confirmation messages when posture is corrected.</p>
-                        <p style="color: #b0b0b0;"><strong>Challenge 2 - Alert Management During Driving:</strong> Requiring infotainment screen interaction was distracting and unsafe. Solution: Implemented steering wheel button for safe, quick alert dismissal without removing hands from wheel.</p>
-                        <p style="color: #b0b0b0;"><strong>Challenge 3 - Fatigue Threshold Clarity:</strong> Abrupt transition from normal to fatigued state felt arbitrary. Solution: Introduced fatigue level indicators (Low/High) showing gradual buildup to increase interpretability.</p>
-                        <p style="color: #b0b0b0;"><strong>Challenge 4 - Small Font Visibility:</strong> Fatigued drivers couldn't read small text on dashboard. Solution: Increased font sizes and enlarged eye icon, ensuring critical safety information remains visible.</p>
-
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">Results & Validation</h3>
-                        <p style="color: #b0b0b0;">Final usability testing revealed strong positive feedback for automatic posture detection and steering wheel alert dismissal. Participants appreciated the system's minimal setup requirements and clear, continuous communication. Iterative testing across multiple rounds ensured design changes directly addressed real user needs in safety-critical driving contexts.</p>
-
-                        <h3 style="color: #e8e8e8; margin-top: 25px;">My Role</h3>
-                        <p style="color: #b0b0b0;">As part of a 6-person team (HCI 3-6), I actively contributed to user research through contextual inquiry, design artifact creation, prototype development, and usability testing facilitation. Involved in conducting heuristic evaluations and implementing design refinements based on participant feedback.</p>
-
+                        <!-- Technology & Sensors -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Technology & Sensors</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">📹 In-Car Camera</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Detects driver's posture, facial features, and eye movements for posture and fatigue tracking</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🪑 Seat Sensors</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Pressure and position sensors monitor skeletal alignment and posture changes</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🎯 Steering Sensors</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Monitor grip pressure and steering behavior for fatigue and posture detection</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">🤖 AI Engine</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Multi-indicator fatigue detection combining eye movement, posture, and behavioural triggers</p>
+                            </div>
                         </div>
+
+                        <!-- Key Features -->
+                        <h3 style="color: #e8e8e8; margin-bottom: 20px;">Key Features</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🎯 Real-Time Posture Monitoring</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px;">System continuously analyzes sitting posture and provides immediate corrective feedback via infotainment screen and audio cues when posture degrades</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">😴 Multi-Trigger Fatigue Detection</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Combines eye movement tracking, posture changes, and driving behavior to detect fatigue before it becomes dangerous</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🛑 Smart Break Recommendations</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Suggests breaks based on driving duration and fatigue indicators to minimize accumulated physical and mental strain</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">🎮 Steering-Wheel Alert Control</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Drivers can dismiss alerts using a steering-wheel button, keeping eyes on the road and reducing distraction</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">📊 Fatigue Level Visualization</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Visual fatigue indicators (low/high) on instrument cluster show real-time fatigue progression, eliminating abrupt transitions</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 8px 0;">✅ Posture Confirmation Feedback</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 14px;">System confirms when driver has successfully corrected posture, providing clear closure and actionable guidance</p>
+                            </div>
+                        </div>
+
+                        <!-- Design Challenges & Solutions -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Design Challenges & Solutions</h3>
+                        
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ System Visibility & Interpretability</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Evaluators felt posture feedback seemed "artificial" and weren't sure what the system was sensing or how corrections were validated.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Added clear information prompts on the instrument cluster displaying "Eyes tracked", "Back detected", "Hands on Wheel?" and confirmation message "Posture fixed" to communicate system status.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ Alert Dismissal & Driver Safety</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Cancelling alerts via the touchscreen was distracting and unsafe, requiring eyes off the road during critical driving moments.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Implemented a steering-wheel button for quick alert dismissal, keeping driver focus on the road. This was highly valued by evaluator Vanessa for reducing distraction.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ Abrupt Fatigue Transitions</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px;">The jump from normal to "Fatigued" state felt sudden and unclear—users couldn't see gradual fatigue buildup or understand the threshold.</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Introduced real-time fatigue level indicators (e.g., an eye icon that changes color from green to yellow to red) showing progressive fatigue accumulation, making transitions interpretable.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 20px; padding: 15px; background: rgba(255, 84, 89, 0.08); border-left: 4px solid #ff5459; border-radius: 4px;">
+                            <p style="color: #ff8b8f; font-weight: 600; margin: 0 0 8px 0;">⚠️ Font Visibility for Fatigued Drivers</p>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 14px;">Small text on instrument cluster was difficult to read, especially when drivers were already cognitively fatigued (feedback from Ryan Ng and Daniel Wong).</p>
+                            <p style="color: #32b8c6; font-size: 13px; margin: 10px 0 0 0;">
+                                ✓ <strong>Solution:</strong> Increased font sizes for driving-time indicators and enlarged fatigue-eye icon to ensure visibility during all driving conditions.
+                            </p>
+                        </div>
+
+                        <!-- Safety-Critical Design -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Safety-Critical Design Approach</h3>
+                        <div style="background: rgba(255, 165, 0, 0.08); border-left: 4px solid #ff8c00; padding: 20px; margin-bottom: 30px; border-radius: 4px;">
+                            <p style="color: #ffaa33; font-weight: 600; margin: 0 0 10px 0;">⚠️ Core Safety Principles</p>
+                            <ul style="color: #b0b0b0; margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.8;">
+                                <li><strong style="color: #32b8c6;">Minimal Cognitive Load:</strong> Alerts are non-intrusive and auto-dismiss after 1 minute if not acknowledged</li>
+                                <li><strong style="color: #32b8c6;">Hands-On-Wheel Controls:</strong> Steering wheel button for alert dismissal ensures eyes stay on road</li>
+                                <li><strong style="color: #32b8c6;">Clear System State:</strong> Real-time indicators show exactly what the system is monitoring and why</li>
+                                <li><strong style="color: #32b8c6;">Passive Automatic Operation:</strong> System requires no manual setup or configuration, it starts automatically when vehicle ignition begins</li>
+                            </ul>
+                        </div>
+
+                        <!-- Evaluator Feedback Highlights -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">What Evaluators & Participants Said</h3>
+                        <div style="display: grid; gap: 15px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💬 Nicholas Nio</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">"The system functions automatically without requiring major human intervention is seamless and convenient. The multi-trigger fatigue detection using eyes and posture is really thoughtful, but severity levels like 'Low' vs 'High Fatigue' would be more informative."</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💬 Vincent Chai Wen Cheng</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">"The eye tracking movement and posture felt straight forward, but without indicators it was hard to know what the system is actually "seeing". The idea of fatigue monitoring wasn't very clear also."</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💬 Lee Peng Haw</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">"The system is beneficial for long drives—it really encourages me to take breaks I normally wouldn't. The automatic operation feels seamless. Maybe suggest the nearest rest station when fatigue is detected?"</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💬 Ryan Ng Xu Yang</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Feedback: Driving time indicator font size was initially too small for visibility. Appreciated automatic posture detection starting when car ignition begins.</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💬 Daniel Wong</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">"System is convenient—automatically detects posture when I start driving. The status messages 'Eyes tracked', 'Back detected', 'Hands on Wheel?' are useful and easy to understand."</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.08); padding: 15px; border-radius: 8px; border-left: 4px solid #32b8c6;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">💬 Vanessa (Usability Test - HCI Specialist)</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">"The steering wheel button to dismiss alerts is very useful—significantly reduces distraction compared to using the infotainment screen."</p>
+                            </div>
+                        </div>
+
+                            <!-- Impact & Validation -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Impact & Validation</h3>
+                        <div style="background: linear-gradient(135deg, rgba(50, 184, 198, 0.15), rgba(50, 184, 198, 0.05)); padding: 25px; border-radius: 10px; border: 1px solid rgba(50, 184, 198, 0.2); margin-bottom: 30px;">
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-bottom: 20px;">
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">4</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">Participant<br>Interviews</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">6</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">Key User<br>Tasks Mapped</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <p style="color: #32b8c6; font-size: 32px; font-weight: 800; margin: 0;">3</p>
+                                    <p style="color: #a0a0a0; margin: 8px 0 0 0; font-size: 12px;">Design Concepts<br>Explored</p>
+                                </div>
+                            </div>
+                            <p style="color: #b0b0b0; margin: 0; font-size: 13px; line-height: 1.6; text-align: justify;">
+                                <strong>Testing Outcomes:</strong> Heuristic evaluations and usability testing with drivers and HCI-aware evaluators indicated that the concept is functional, intuitive, and aligned with real-world driving needs. Participants appreciated automatic operation, multi-trigger fatigue detection, and encouragement to take breaks. Iterative refinements based on feedback addressed visibility, interpretability, and safety concerns, resulting in a more robust design.
+                            </p>
+                        </div>
+
+                        <!-- Research Participants -->
+                        <h3 style="color: #e8e8e8; margin-top: 40px; margin-bottom: 20px;">Research Participants</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">Ong Boon Heng</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Student, 15-30 min commutes, occasional 3-hour trips</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">Brandon Khoo</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Lecturer, avoids heavy traffic, experiences back pain</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">Choong Jia Yi</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Student (19), 30-40 min casual drives, minimal discomfort</p>
+                            </div>
+                            <div style="background: rgba(50, 184, 198, 0.05); padding: 15px; border-radius: 8px;">
+                                <p style="color: #32b8c6; font-weight: 600; margin: 0 0 6px 0; font-size: 13px;">Marcus Liew Sau Yang</p>
+                                <p style="color: #b0b0b0; margin: 0; font-size: 12px;">Student, daily commute, frequent long-distance trips to Kedah</p>
+                            </div>
+                        </div>
+
+                        <!-- Role -->
+                        <h3 style="color: #e8e8e8; margin-bottom: 15px;">My Role</h3>
+                        <p style="color: #b0b0b0; margin: 0; line-height: 1.6; text-align: justify;">
+                            As part of a 6-person group (HCI 3-6), I contributed across the full design lifecycle: conducted contextual inquiry and interviews with drivers, participated in task analysis and ideation, created design sketches and paper prototypes, facilitated heuristic evaluations and usability testing sessions with evaluators and real drivers, implemented design revisions based on feedback, and contributed to the creation of high-fidelity digital mockups. This project deepened my understanding of iterative UX design and the critical importance of safety-centric thinking in automotive HCI.
+                        </p>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
