@@ -1159,16 +1159,20 @@
             section.style.display = 'none';
         });
         
-        // Show selected tab
+        // Show selected tab with correct display type
         const activeTab = document.getElementById(tabName);
         if (activeTab) {
             if (activeTab.id === 'hero') {
                 activeTab.style.display = 'flex';
-            } else {
+            } else if (activeTab.classList.contains('projects-section') || 
+                    activeTab.classList.contains('video-section') ||
+                    activeTab.classList.contains('certifications-section') ||
+                    activeTab.classList.contains('skills-section')) {
                 activeTab.style.display = 'block';
             }
         }
     }
+
 
     // Close modal when clicking outside
     window.onclick = function(event) {
